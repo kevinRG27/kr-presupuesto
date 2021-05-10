@@ -21,14 +21,14 @@ function App() {
         ...gastos,
         gasto
       ])
-    }
-
+    
     //Restar del presupuesto actual
     const presupuestoRestante = restante - gasto.cantidad;
     guardarRestante(presupuestoRestante);
 
     //Resetear guardarCrearGasto
     guardarCrearGasto(false);
+    }
   }, [gasto,crearGasto,gastos,restante])
 
   
